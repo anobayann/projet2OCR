@@ -1,0 +1,483 @@
+/* police*/
+@font-face {
+    font-family: 'Helvetica';
+    src: url('helvetica.ttf');
+}
+
+
+/*page entiere*/ 
+body
+{
+    background: black;
+    font-family: Helvetica, sans-serif;
+    display: flex;  
+    width: 90%;
+    margin: auto;
+    
+}
+
+
+/*tout les paragraphes et le sous titre*/
+p, h2
+{
+	color: #424242;
+}
+
+/*taille d'ecriture des p*/
+p
+{
+    font-size: 18px;
+}
+
+/*tailles d'ecriture et majuscules des sous titres*/
+h3
+{
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+
+
+/*tout la partie gauche du cv*/
+#presentation
+{
+	background: #90A4AE;
+    width: 30%	
+}
+
+/*toute la partie droite du cv*/
+#contenu
+{
+	width: 70%;
+	background: white; 
+    padding-left: 7%;
+    padding-right: 5%;
+}
+
+/*photo id*/
+#presentation img
+{
+	border-radius: 50%;
+	width: 200px;
+	height: 200px;
+	margin-top: 10%;
+	margin-bottom: 5%;
+	border: 3px groove #CFD8DC;    
+}
+
+
+/*en tete phto positionnement*/
+#presentation header
+{
+	text-align: center;
+}
+
+
+/*titre prensentations*/
+#presentation h3
+{
+	text-align: center;
+	border: 2px solid #43454A;
+	color: #90A4AE;
+	background: #424242;
+	text-transform: uppercase;
+}
+
+
+/*tout les textes ds presentation*/
+#presentation p
+{
+	width: 85%;
+	margin-left: 10%;  
+}
+/*textes ds infos*/
+.mepinfo p
+{
+	font-weight: bold;   
+}
+
+.mepinfo 
+{
+    display: flex;
+    flex-direction: column;
+}
+.mepinfo p:first-child
+{
+    margin-bottom: 0px;
+}
+.mepinfo p:last-child
+{
+    margin-top: 0px;
+}
+
+
+/*a propos de moi paragraphe*/
+#apropos p
+{
+	text-align: justify;
+}
+
+/*positionnement des logos*/
+#logos
+{
+	text-align: center;
+
+/*logo style*/
+}
+#logos i
+{
+	
+    margin-right: 5%;  
+	width: 40px;
+    height: 40px;
+    font-size: 2em;
+	border: 2px solid black;
+	border-radius: 50%;
+	padding: 3%;
+	color: #43454A;
+	border-color: #43454A;
+    box-shadow: 10px 10px 10px 0px;
+}
+
+/*marge entre a propos de moi et loisirs*/
+#loisirs
+{
+    margin-top: 700px;
+    margin-bottom: 30px;   
+}
+
+
+
+
+
+
+
+
+
+/*mon nom*/
+#contenu h1
+{
+    font-size: 4em;
+    margin-bottom: inherit;
+    font-weight: inherit;
+    margin-top: 13%;
+}
+
+/*coller mon nom et description*/
+#contenu h2
+{
+    margin-top: 0px;
+       
+}
+
+/*nom de famille*/
+#anoba
+{
+    background: white;
+    color: #607D8B;
+    
+}
+
+/*souligner le debut de developpeur*/
+#devel
+{
+    
+    border-bottom: 2px solid #607D8B;
+    color: #424242;
+}
+
+/*positionnement des sous titres de la partie gauche*/ 
+#contenu h3
+{
+    
+    margin-left: 5%;
+    margin-bottom: 2%;
+    
+}
+
+/*placement position et bordure des sous titres et icones*/
+.sous_titre
+{
+    margin-top: 10%;
+    display: flex;
+    border-bottom: 2px solid #607D8B;
+    
+}
+
+/*taille, couleur et position des logos*/
+#contenu i
+{
+    font-size: 2em;
+    color: #607D8B;
+    margin-top: 5%
+}
+
+/*separation des blocs horizontalement*/
+.allflex
+{
+    
+    display: flex;
+    
+}
+.all2
+{
+    display: flex;
+    flex-flow: wrap;
+}
+
+/*marge de la description ds formation*/
+.allflex p
+{
+    min-width: 180px;
+}
+
+/*marge de la description ds experiences*/
+.desc
+{
+    margin-left: 200px;
+}
+
+/*mise en gras des dates et lieux et sparation avec description*/
+
+.date
+
+{
+    font-weight: bold;   
+    width: 180px;
+    padding-right: 20px;  
+}
+
+/*pour que footer reste en bas*/
+#contenu footer
+{
+    margin-top: 180px;
+}
+ 
+/*distance de separation entre les references*/
+.patxi
+{
+    margin-left: 20%;
+}
+
+
+
+/*alignement des puces*/
+li
+{
+    margin-left: -0.5em; 
+    position: relative;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+li::before
+{
+    content: "";   
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #607D8B;
+    border-radius: 50%;
+    position: absolute;
+    top: 21px;
+    left: -22px;    
+}
+
+li:nth-child(1)::after
+{
+    content: "";
+    position: absolute;
+    border: 3px solid #607D8B;
+    border-radius: 50%;
+    padding: 8px;
+    top: 15px;
+    left: -28px;   
+}
+
+/*responsive design tablette landscape*/
+@media all and (min-width: 900px) and (max-width: 1100px)
+{
+    p
+    {
+        font-size: 16px;
+    }
+    h3
+    {
+        font-size: 1.6em;
+    }
+    #presentation img
+    {
+        width: 150px;
+        height: 150px;
+    }
+    
+}
+
+/*responsive design smartphone et portrait tablette*/
+@media all and (max-width: 900px)
+{
+    body
+    {
+        flex-direction: column;
+        position: relative;            
+    }
+    
+    #presentation
+    
+    {
+        width: 100%;
+        background: white;
+        display: flex;
+        flex-direction: column
+    }
+    
+    #contenu
+    {
+        width: 100%;
+    }
+    h3
+    {
+        font-size: 1.2em;
+    }
+    #presentation section:nth-child(1)
+    {
+        order: 2;
+    }
+    #presentation section:nth-child(2)
+    {
+        order: 1;
+    }
+
+    .allflex, .all2
+    {
+        flex-direction: column;
+        
+    }
+    .date
+    {
+        margin-right: 20px;
+    }
+    .desc
+    {
+        margin-left: inherit;
+    }
+    
+    #contenu header
+    {
+        position: absolute;
+        font-size: 0.7em;
+        top: 200px;    
+    }
+   
+    #apropos
+    {
+        margin-top: 220px
+    }
+    #presentation header
+    {
+        background-color: #90A4AE;
+        height: 140px;
+        border-bottom: 2px solid #424242;
+    }
+    
+    #presentation img
+    {
+	
+	margin-top: 60px;
+	margin-bottom: 5%;
+	border: 2px groove white;
+    width: 150px;
+    height: 150px;
+     
+    }
+    #contact h3, #apropos h3
+    {
+        background-color: #90A4AE;
+        color: #424242;
+        
+    }
+    p
+    {
+        font-size: 14px;
+        
+    }
+    #infos
+    {
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    #infos p:first-child
+    {
+        width: 120px;
+    }
+    .mepinfo
+    {
+        display: flex;
+        flex-direction: row;
+    
+    }
+    .mepinfo p:first-child
+    {
+        margin-top: inherit;
+    }
+    
+    #presentation p
+    {
+        margin-left: 10px;
+        width: 95%;
+    }
+  
+    #contenu i
+    {
+        margin-top: 10px;
+    }
+    
+    .patxi
+    {
+        margin-left: inherit;
+        margin-bottom: 250px;
+        
+    }
+    
+    #contenu footer
+    {
+        margin-top: 0px;
+    }
+    
+    #loisirs
+    {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        background-color: #90A4AE;
+        margin-top: inherit;
+        padding-bottom: 40px;
+        margin-bottom: 0px;
+        border-top: 2px solid #424242;
+    }
+    
+    #loisirs i
+    {      
+        padding: 2%;        
+    }
+    
+    #loisirs h3
+    {
+        border: none;
+        color: #424242;
+        background: #90A4AE;
+        font-size: 1.5em;    
+    }
+   
+    
+   
+   
+}
+
+
+
