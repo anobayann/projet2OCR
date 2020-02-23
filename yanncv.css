@@ -322,7 +322,8 @@ li:nth-child(1)::after
     body
     {
         flex-direction: column;
-        position: relative;            
+        position: relative; 
+        width: 100%;
     }
     
     #presentation
