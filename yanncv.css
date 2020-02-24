@@ -49,10 +49,14 @@ h3
 #contenu
 {
 	width: 70%;
-	background: white; 
-    padding-left: 7%;
+	background: white;
+    padding-left: 8%;
     padding-right: 5%;
+    
+    
 }
+
+
 
 /*photo id*/
 #presentation img
@@ -229,6 +233,7 @@ h3
 .allflex p
 {
     min-width: 180px;
+   
 }
 
 /*marge de la description ds experiences*/
@@ -324,6 +329,7 @@ li:nth-child(1)::after
         flex-direction: column;
         position: relative; 
         width: 100%;
+        
     }
     
     #presentation
@@ -332,13 +338,15 @@ li:nth-child(1)::after
         width: 100%;
         background: white;
         display: flex;
-        flex-direction: column
+        flex-direction: column;
     }
     
     #contenu
     {
-        width: 100%;
+        width: 87%;
+        
     }
+    
     h3
     {
         font-size: 1.2em;
@@ -357,10 +365,7 @@ li:nth-child(1)::after
         flex-direction: column;
         
     }
-    .date
-    {
-        margin-right: 20px;
-    }
+  
     .desc
     {
         margin-left: inherit;
