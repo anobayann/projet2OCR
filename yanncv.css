@@ -318,6 +318,11 @@ li:nth-child(1)::after
         width: 150px;
         height: 150px;
     }
+    #logos i
+    {
+        width: 37px;
+        height: 37px;
+    }
     
 }
 
@@ -368,7 +373,7 @@ li:nth-child(1)::after
   
     .desc
     {
-        margin-left: inherit;
+        margin-left: 0px;
     }
     
     #contenu header
