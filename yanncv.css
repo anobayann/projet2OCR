@@ -323,7 +323,11 @@ li:nth-child(1)::after
         width: 37px;
         height: 37px;
     }
-    
+    #apropos p
+    {
+       text-align: inherit;
+        
+    }
 }
 
 /*responsive design smartphone et portrait tablette*/
