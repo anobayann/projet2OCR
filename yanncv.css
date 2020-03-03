@@ -1,7 +1,7 @@
 /* police*/
 @font-face {
     font-family: 'Helvetica';
-    src: url('helvetica.ttf');
+    src: url('Helvetica.ttf');
 }
 
 
@@ -112,6 +112,14 @@ h3
 .mepinfo p:last-child
 {
     margin-top: 0px;
+    margin-bottom: 0px;
+}
+.mepinfo a
+{
+    margin-left: 10%;
+    color: #424242;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 
@@ -323,6 +331,7 @@ li:nth-child(1)::after
         width: 37px;
         height: 37px;
     }
+    
     #apropos p
     {
        text-align: inherit;
@@ -419,6 +428,7 @@ li:nth-child(1)::after
         font-size: 14px;
         
     }
+   
     #infos
     {
         display: flex;
@@ -426,24 +436,35 @@ li:nth-child(1)::after
         
         
     }
-    #infos p:first-child
+    #infos a
     {
-        width: 120px;
+        font-size: 14px;
+        
+        
     }
+    .mepinfo a
+    {
+        margin-left: 20px;
+    }
+    
+    
     .mepinfo
     {
         display: flex;
         flex-direction: row;
     
     }
+    
     .mepinfo p:first-child
     {
         margin-top: inherit;
+        min-width: 80px;
+        max-width: 80px;
     }
     
     #presentation p
     {
-        margin-left: 10px;
+        margin-left: 20px;
         width: 95%;
     }
   
