@@ -395,16 +395,19 @@ li:nth-child(1)::after
     }
     
     #presentation section:nth-child(1)
+    
     {
         order: 2;
     }
     
     #presentation section:nth-child(2)
+    
     {
         order: 1;
     }
 
     .allflex, .all2
+    
     {
         flex-direction: column;
         
@@ -452,6 +455,11 @@ li:nth-child(1)::after
     {
         background-color: #90A4AE;
         color: #424242;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+            
+        
         
     }
     p
@@ -464,8 +472,9 @@ li:nth-child(1)::after
     {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         
-        
+
     }
     #infos a
     {
@@ -483,6 +492,7 @@ li:nth-child(1)::after
     {
         display: flex;
         flex-direction: row;
+        margin-bottom: 10px;
     
     }
     
@@ -491,6 +501,7 @@ li:nth-child(1)::after
         margin-top: inherit;
         min-width: 80px;
         max-width: 80px;
+        text-decoration: underline;
     }
     
     #presentation p
