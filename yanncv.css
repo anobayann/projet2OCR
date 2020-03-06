@@ -389,9 +389,9 @@ li:nth-child(1)::after
         
     }
     
-    h3
+    #contenu h3
     {
-        font-size: 1.2em;
+        font-size: 1.6em;
     }
     
     #presentation section:nth-child(1)
@@ -512,7 +512,8 @@ li:nth-child(1)::after
   
     #contenu i
     {
-        margin-top: 30px;
+        margin-top: 25px;
+        font-size: 1.6em;
     }
     
     .patxi
@@ -549,7 +550,7 @@ li:nth-child(1)::after
         border: none;
         color: #424242;
         background: #90A4AE;
-        font-size: 1.5em;    
+           
     }
     li::before
     {
