@@ -33,7 +33,7 @@ p
 h3
 {
     text-transform: uppercase;
-    font-size: 2em;
+    
 }
 
 
@@ -84,7 +84,7 @@ h3
 	border: 2px solid #43454A;
 	color: #90A4AE;
 	background: #424242;
-	text-transform: uppercase;
+	font-size: 1.7em;
 }
 
 
@@ -120,6 +120,7 @@ h3
     color: #424242;
     font-weight: bold;
     text-decoration: none;
+    font-size: 18px;
 }
 
 
@@ -127,8 +128,8 @@ h3
 #apropos p
 {
 	text-align: justify;
+    
 }
-
 /*positionnement des logos*/
 #logos
 {
@@ -154,7 +155,7 @@ h3
 /*marge entre a propos de moi et loisirs*/
 #loisirs
 {
-    margin-top: 700px;
+    margin-top: 780px;
     margin-bottom: 30px;   
 }
 
@@ -203,7 +204,8 @@ h3
 {
     
     margin-left: 5%;
-    margin-bottom: 2%;
+    margin-bottom: 0px;
+    font-size: 2em;
     
 }
 
@@ -221,7 +223,7 @@ h3
 {
     font-size: 2em;
     color: #607D8B;
-    margin-top: 5%
+    margin-top: 4.5%;
 }
 
 /*separation des blocs horizontalement*/
@@ -258,7 +260,16 @@ h3
     font-weight: bold;   
     width: 180px;
     padding-right: 20px;  
+    
 }
+.datelast
+{
+    font-weight: bold;   
+    width: 180px;
+    padding-right: 20px; 
+    margin-bottom: 0px;
+}
+
 
 /*pour que footer reste en bas*/
 #contenu footer
@@ -295,7 +306,7 @@ li::before
     background: #607D8B;
     border-radius: 50%;
     position: absolute;
-    top: 21px;
+    top: 24px;
     left: -22px;    
 }
 
@@ -306,17 +317,18 @@ li:nth-child(1)::after
     border: 3px solid #607D8B;
     border-radius: 50%;
     padding: 8px;
-    top: 15px;
+    top: 18px;
     left: -28px;   
 }
 
 /*responsive design tablette landscape*/
 @media all and (min-width: 900px) and (max-width: 1100px)
 {
-    p
+    p, a
     {
         font-size: 16px;
     }
+    
     h3
     {
         font-size: 1.6em;
@@ -331,11 +343,23 @@ li:nth-child(1)::after
         width: 37px;
         height: 37px;
     }
+    #contenu i
+    {
+        margin-top: 6%;
+    }
     
     #apropos p
     {
        text-align: inherit;
         
+    }
+      li::before
+    {
+        top: 20px;
+    }
+    li:first-child::after
+    {
+        top: 14px;
     }
 }
 
@@ -369,10 +393,12 @@ li:nth-child(1)::after
     {
         font-size: 1.2em;
     }
+    
     #presentation section:nth-child(1)
     {
         order: 2;
     }
+    
     #presentation section:nth-child(2)
     {
         order: 1;
@@ -398,7 +424,12 @@ li:nth-child(1)::after
    
     #apropos
     {
-        margin-top: 220px
+        margin-top: 220px;
+    }
+    
+    #apropos p
+    {
+        max-width: 91%;
     }
     #presentation header
     {
@@ -470,7 +501,7 @@ li:nth-child(1)::after
   
     #contenu i
     {
-        margin-top: 10px;
+        margin-top: 30px;
     }
     
     .patxi
@@ -509,11 +540,19 @@ li:nth-child(1)::after
         background: #90A4AE;
         font-size: 1.5em;    
     }
-   
+    li::before
+    {
+        top: 18px;
+    }
+    li:first-child::after
+    {
+        top: 12px;
+    }
     
    
    
 }
+
 
 
 
