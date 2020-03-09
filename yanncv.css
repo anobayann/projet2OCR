@@ -561,6 +561,11 @@ li:nth-child(1)::after
         top: 12px;
     }
     
+    .sous-titre
+    {
+        line-height: 32px;
+    }
+    
    
    
 }
